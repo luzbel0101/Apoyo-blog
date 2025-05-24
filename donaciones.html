@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Donaciones</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background-color: #1f1f1f;
+      color: #f1f1f1;
+      text-align: center;
+      padding: 20px;
+      font-size: 1.1rem;
+    }
+
+    header {
+      background-color: #2a2a2a;
+      padding: 15px;
+    }
+
+    header nav a {
+      margin: 0 15px;
+      color: #f1f1f1;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.6rem;
+      color: #d4af37;
+    }
+
+    p {
+      max-width: 800px;
+      margin: 10px auto;
+      line-height: 1.6;
+    }
+
+    .donation-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 60px;
+      margin: 40px auto;
+      flex-wrap: wrap;
+    }
+
+    .donation-option img {
+      width: 150px;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    }
+
+    .donation-option h3 {
+      margin: 10px 0 5px;
+      font-weight: bold;
+      color: #ffffff;
+    }
+
+    .paypal-button {
+      margin-top: 30px;
+    }
+
+    .paypal-button button {
+      background: linear-gradient(to right, #0070ba, #1546a0);
+      color: #ffffff;
+      font-size: 1.3rem;
+      padding: 14px 28px;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      font-weight: bold;
+      box-shadow: 0 8px 20px rgba(0, 112, 186, 0.4);
+      transition: transform 0.2s, box-shadow 0.3s;
+    }
+
+    .paypal-button button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 12px 24px rgba(0, 112, 186, 0.6);
+    }
+
+    .back-link {
+      margin-top: 25px;
+      display: block;
+      color: #d4af37;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#">Subir libro</a>
+      <a href="#">Categorías</a>
+      <a href="#">Mi cuenta</a>
+    </nav>
+  </header>
+
+  <h1>Tu apoyo sostiene la inspiración</h1>
+
+  <p>Este proyecto nace desde lo profundo del alma. Cada palabra escrita en este blog lleva consigo fragmentos de vivencias, pensamientos y anhelos que buscan tocar corazones y despertar conciencias. Aquí no se trata solo de letras, sino de un viaje compartido entre quien escribe y quien lee.</p>
+
+  <p>Si alguna vez una frase te estremeció, si algún relato te dio consuelo o una reflexión te hizo mirar dentro de ti, considera hacer una donación. Con tu gesto, no solo apoyas el tiempo y esfuerzo invertido, sino que das vida a nuevos escritos que esperan nacer.</p>
+
+  <div class="donation-section">
+    <div class="donation-option">
+      <h3>Nequi</h3>
+      <img src="nequi.png" alt="QR Nequi">
+    </div>
+    <div class="donation-option">
+      <h3>Banco</h3>
+      <img src="banco.png" alt="QR Banco">
+    </div>
+  </div>
+
+  <div class="paypal-button">
+    <button onclick="window.location.href='https://paypal.me/Jesus2004soto'">Donar con PayPal</button>
+  </div>
+
+  <a class="back-link" href="index.html">← Volver al blog</a>
+
+</body>
+</html>
