@@ -3,182 +3,72 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mi Blog Interactivo</title>
-  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI&display=swap" rel="stylesheet">
+  <title>Apoya este espacio</title>
   <style>
     body {
+      font-family: 'Georgia', serif;
+      background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+      background-color: #f5f0e6;
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f9f9f9;
-      color: #333;
+      padding: 40px;
+      color: #3e2f1c;
     }
-    header {
-      background-color: #4a4e69;
-      color: white;
-      padding: 1rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+    .container {
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 12px;
+      padding: 40px;
+      max-width: 700px;
+      margin: auto;
+      box-shadow: 0 0 18px rgba(0, 0, 0, 0.15);
+      text-align: center;
     }
-    nav a {
-      color: white;
-      margin: 0 1rem;
+    h1 {
+      font-size: 36px;
+      color: #6b2b23;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 18px;
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+    img {
+      width: 320px;
+      margin: 30px auto;
+      display: block;
+    }
+    .btn {
+      display: inline-block;
+      padding: 12px 30px;
+      font-size: 16px;
+      background-color: #6b2b23;
+      color: #fff;
       text-decoration: none;
-    }
-    .search-box {
-      padding: 0.5rem;
-      border-radius: 5px;
-      border: none;
-    }
-    main {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 1.5rem;
-      padding: 2rem;
-    }
-    .post {
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      padding: 1rem;
-      position: relative;
-    }
-    .post img {
-      max-width: 100%;
       border-radius: 8px;
+      margin-top: 20px;  
+      transition: background-color 0.3s ease;
     }
-    .post h2 {
-      margin-top: 0.5rem;
-      color: #22223b;
-    }
-    .post .date {
-      font-size: 0.85rem;
-      color: #888;
-    }
-    .post .tag {
-      background-color: #c9ada7;
-      color: white;
-      border-radius: 5px;
-      padding: 2px 8px;
-      font-size: 0.75rem;
-      margin-right: 5px;
-    }
-    .like-button {
-      background-color: #9a8c98;
-      color: white;
-      border: none;
-      padding: 0.5rem 1rem;
-      border-radius: 5px;
-      cursor: pointer;
-      margin-top: 1rem;
-    }
-    .like-button:hover {
-      background-color: #c9ada7;
-    }
-    .about, footer {
-      padding: 2rem;
-      background-color: #22223b;
-      color: white;
-      text-align: center;
-    }
-    footer a {
-      color: #f2e9e4;
-      margin: 0 10px;
-      text-decoration: none;
-    }
-    .donation-links {
-      text-align: center;
-      margin-top: 2rem;
-    }
-    .qr-code {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-    .qr-code img {
-      width: 150px;
+    .btn:hover {
+      background-color: #4c1c17;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>🌟 Mi Blog Interactivo</h1>
-    <nav>
-      <a href="#">Inicio</a>
-      <a href="#">Pronto disponible cuenta</a>
-      <a href="#">Lo más reciente</a>
-    </nav>
-    <input type="text" class="search-box" placeholder="Buscar..." oninput="filtrarEntradas(event)">
-  </header>
-
-  <main id="blogPosts">
-    <div class="post">
-      <img src="https://via.placeholder.com/600x300" alt="Imagen destacada">
-      <h2>Primer Post Increíble</h2>
-      <div class="date">Publicado el <span class="fecha"></span></div>
-      <div><span class="tag">Tips</span></div>
-      <p>Este es un post de prueba con contenido muy interesante para todos los lectores.</p>
-      <button class="like-button" onclick="meGusta(this)">❤️ Me gusta (<span>0</span>)</button>
-    </div>
-  </main>
-
-  <div class="donation-links">
-    <h2>💖 Apoya este blog</h2>
-    <p>Tu aporte ayuda a seguir creando contenido inspirador y auténtico.</p>
-    <div class="qr-code">
-      <div>
-        <p><strong>Nequi</strong></p>
-        <img src="/mnt/data/WhatsApp%20Image%202025-05-24%20at%202.29.48%20PM.jpeg" alt="QR Nequi">
-      </div>
-      <div>
-        <p><strong>Banco</strong></p>
-        <img src="https://luzbel0101.github.io/Apoyo-blog/qr-banco.png" alt="QR Banco">
-      </div>
-    </div>
-    <br>
-    <a href="https://paypal.me/Jesus2004soto?country.x=CO&locale.x=es_XC" target="_blank">Donar con PayPal</a>
+  <div class="container">
+    <h1>Tu apoyo sostiene la inspiración</h1>
+    <p>
+      Este proyecto nace desde lo profundo del alma. Cada palabra escrita en este blog lleva consigo fragmentos de vivencias, pensamientos
+      y anhelos que buscan tocar corazones y despertar conciencias. Aquí no se trata solo de letras, sino de un viaje compartido entre quien escribe y quien lee.
+    </p>
+    <p>
+      Si alguna vez una frase te estremeció, si algún relato te dio consuelo o una reflexión te hizo mirar dentro de ti,
+      considera hacer una donación. Con tu gesto, no solo apoyas el tiempo y esfuerzo invertido, sino que das vida a nuevos escritos que esperan nacer.
+    </p>
+    <p><strong>Escanea el siguiente código QR con tu app Nequi para colaborar:</strong></p>
+    <img src="qr-nequi.png" alt="QR Nequi Donación" />
+    <br />
+    <a href="https://petalesetcendres.blogspot.com" class="btn">Volver al blog</a>
   </div>
-
-  <section class="about">
-    <h2>Sobre mí</h2>
-    <img src="https://via.placeholder.com/100" style="border-radius: 50%;">
-    <p>Hola, soy el autor de este blog. Aquí comparto conocimientos, inspiración y creatividad.</p>
-  </section>
-
-  <footer>
-    <p>Contacto: miemail@ejemplo.com</p>
-    <p>Sígueme: <a href="#">Instagram</a> | <a href="#">Twitter</a> | <a href="#">YouTube</a></p>
-  </footer>
-
-  <script>
-    function meGusta(button) {
-      const contador = button.querySelector("span");
-      let cantidad = parseInt(contador.innerText);
-      cantidad++;
-      contador.innerText = cantidad;
-    }
-
-    function filtrarEntradas(event) {
-      const texto = event.target.value.toLowerCase();
-      const posts = document.querySelectorAll('.post');
-      posts.forEach(post => {
-        const titulo = post.querySelector('h2').innerText.toLowerCase();
-        post.style.display = titulo.includes(texto) ? '' : 'none';
-      });
-    }
-
-    document.querySelectorAll('.fecha').forEach(el => {
-      const hoy = new Date();
-      const fecha = hoy.toLocaleDateString("es-ES", {
-        year: 'numeric',
-        month: 'long',
-        day: 'numeric'
-      });
-      el.innerText = fecha;
-    });
-  </script>
 </body>
 </html>
 
